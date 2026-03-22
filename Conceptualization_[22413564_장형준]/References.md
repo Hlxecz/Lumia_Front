@@ -32,6 +32,7 @@
    
 - [학술 논문] KCI 등재 논문: 오지혜, 성정환 (2019). VR 공간상의 가상 반려동물에 의한 힐링 효과의 검증. 한국게임학회 논문지, 19(3), 115-124.
 
-URL: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?artiId=ART002479261
+  URL: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?artiId=ART002479261
 
     ![alt text](image-8.png)
+    
