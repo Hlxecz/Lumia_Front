@@ -66,7 +66,7 @@
 ## 4.3 Shop Interface (상점 화면)
 
 <p align="center">
-  <video src="./images/shop.mp4" width="202px" controls title="상점 시연 영상">
+  <video src="https://github.com/user-attachments/assets/126863de-0339-4fe3-b55b-5e40f2946247" width="202px" controls>
     브라우저가 비디오 태그를 지원하지 않습니다.
   </video>
 </p>
@@ -166,9 +166,7 @@
     </td>
 
   <td>
-      <video src="./images/notice_board.mp4" width="202px" controls>
-        브라우저가 비디오 태그를 지원하지 않습니다.
-      </video>
+<video src="https://github.com/user-attachments/assets/207f0068-a140-485c-86e4-95be4c49166b" width="202px" controls></video>
     </td>
 
   </tr>
@@ -199,4 +197,4 @@
 
 ---
 
-**[Next Step: 5. Glossary](./images/Glossary.md)**
+**[Next Step: 5. Glossary](./Glossary.md)**
