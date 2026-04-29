@@ -65,11 +65,9 @@
 
 ## 4.3 Shop Interface (상점 화면)
 
-<p align="center">
-  <video src="https://github.com/user-attachments/assets/126863de-0339-4fe3-b55b-5e40f2946247" width="202px" controls>
-    브라우저가 비디오 태그를 지원하지 않습니다.
-  </video>
-</p>
+<center>
+  <video src="https://github.com/user-attachments/assets/126863de-0339-4fe3-b55b-5e40f2946247" width="202px" controls></video>
+</center>
 
 - **실시간 미리보기**: 아이템 클릭 시 아바타의 외형 변화를 즉시 확인 가능합니다.
 - **포인트 동기화**: 구매 완료 시 실시간으로 보유 재화가 차감되어 UI에 반영됩니다.
