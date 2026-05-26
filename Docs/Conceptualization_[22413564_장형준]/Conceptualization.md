@@ -1,4 +1,4 @@
-# Lumia
+# Lumia Conceptualization
 
 **익명성과 공감의 조화, 마음 성장 플랫폼**
 
