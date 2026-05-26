@@ -33,7 +33,7 @@
 
 1.  **[Introduction](./Introduction.md)**
 2.  **[Class_diagram](./Class_diagram.md)**
-3.  **[Sequence_diagram](./Sequence_diagram.md)**
+3.  **[Sequence_diagram](./Sequence_diagram.md)** ([PlantUML Source](./Sequence_diagram_plantuml.md))
 4.  **[State_machine_diagram](./State_machine_diagram.md)**
 5.  **[Implementation_requirements](./Implementation_requirements.md)**
 6.  **[Glossary](./Glossary.md)**
