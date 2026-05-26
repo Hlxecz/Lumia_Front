@@ -6,7 +6,7 @@
 
 ## 2-1. Class Diagram
 
-![Class Diagram](./images/Class_diagram.png)
+![Class Diagram](./images/class_diagram.png)
 
 ## 2-2. Class Diagram Description
 
