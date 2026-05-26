@@ -1,26 +1,29 @@
 # 3. Sequence Diagram
 
-[⬅️ Back to Contents](./Design.md)
+[Back to Contents](./Design.md)
+
+> [!NOTE]
+> 본 문서에서 사용하는 **U.C**는 **Use Case(유스케이스)**의 약자이며, 시스템이 제공하는 개별 기능적 단위를 의미합니다.
 
 ---
 
-이 문서는 Conceptualization 단계에서 정의된 21가지 유스케이스를 바탕으로, 클라이언트(React Native App)부터 백엔드 컨트롤러, 서비스, 데이터베이스 레포지토리, 그리고 외부 시스템(FastAPI 필터 서버, OpenAI API) 간의 동적 흐름과 메시지 전달 순서를 설계한 시퀀스 다이어그램 문서입니다.
+이 문서는 Conceptualization 단계에서 정의된 21가지 유스케이스(U.C)를 바탕으로, 클라이언트(React Native App)부터 백엔드 컨트롤러, 서비스, 데이터베이스 레포지토리, 그리고 외부 시스템(FastAPI 필터 서버, OpenAI API) 간의 동적 흐름과 메시지 전달 순서를 설계한 시퀀스 다이어그램 문서입니다.
 
 각 다이어그램 하단에는 객체 간 통신 순서와 세부 비즈니스 로직 및 예외 처리 흐름을 학술 보고서 스타일(12pt, 160% 기준)로 상세히 기술하였습니다.
 
 ---
 
-##  목차
-1. [Module 1. 회원 및 인증 관리 (U.C 1 ~ 5)](#-module-1-회원-및-인증-관리-uc-1--5)
-2. [Module 2. 프로필 및 환경 설정 (U.C 6 ~ 9)](#-module-2-프로필-및-환경-설정-uc-6--9)
-3. [Module 3. 질문 발급 및 답변 기록 (U.C 10 ~ 13)](#-module-3-질문-발급-및-답변-기록-uc-10--13)
-4. [Module 4. 상점 및 아바타 장착 (U.C 14 ~ 15)](#-module-4-상점-및-아바타-장착-uc-14--15)
-5. [Module 5. 익명 커뮤니티 및 댓글 (U.C 16 ~ 20)](#-module-5-익명-커뮤니티-및-댓글-uc-16--20)
-6. [Module 6. AI 공감 대화 (U.C 21)](#-module-6-ai-공감-대화-uc-21)
+## 목차
+1. [Module 1. 회원 및 인증 관리 (U.C 1 ~ 5)](#module-1-회원-및-인증-관리-uc-1--5)
+2. [Module 2. 프로필 및 환경 설정 (U.C 6 ~ 9)](#module-2-프로필-및-환경-설정-uc-6--9)
+3. [Module 3. 질문 발급 및 답변 기록 (U.C 10 ~ 13)](#module-3-질문-발급-및-답변-기록-uc-10--13)
+4. [Module 4. 상점 및 아바타 장착 (U.C 14 ~ 15)](#module-4-상점-및-아바타-장착-uc-14--15)
+5. [Module 5. 익명 커뮤니티 및 댓글 (U.C 16 ~ 20)](#module-5-익명-커뮤니티-및-댓글-uc-16--20)
+6. [Module 6. AI 공감 대화 (U.C 21)](#module-6-ai-공감-대화-uc-21)
 
 ---
 
-## 🌐 Module 1. 회원 및 인증 관리 (U.C 1 ~ 5)
+## Module 1. 회원 및 인증 관리 (U.C 1 ~ 5)
 
 ### 3-1. U.C 1 - Sign Up (회원가입)
 ```mermaid
@@ -194,7 +197,7 @@ sequenceDiagram
 
 ---
 
-## 🎨 Module 2. 프로필 및 환경 설정 (U.C 6 ~ 9)
+## Module 2. 프로필 및 환경 설정 (U.C 6 ~ 9)
 
 ### 3-6. U.C 6 - View Profile (프로필 조회)
 ```mermaid
@@ -332,7 +335,7 @@ sequenceDiagram
 
 ---
 
-## 📝 Module 3. 질문 발급 및 답변 기록 (U.C 10 ~ 13)
+## Module 3. 질문 발급 및 답변 기록 (U.C 10 ~ 13)
 
 ### 3-10. U.C 10 - Scheduled Question (정기 질문 발송 및 조회)
 ```mermaid
@@ -480,7 +483,7 @@ sequenceDiagram
 
 ---
 
-## 🛒 Module 4. 상점 및 아바타 장착 (U.C 14 ~ 15)
+## Module 4. 상점 및 아바타 장착 (U.C 14 ~ 15)
 
 ### 3-14. U.C 14 - Purchase Item (아이템 구매)
 ```mermaid
@@ -548,7 +551,7 @@ sequenceDiagram
 
 ---
 
-## 📢 Module 5. 익명 커뮤니티 및 댓글 (U.C 16 ~ 20)
+## Module 5. 익명 커뮤니티 및 댓글 (U.C 16 ~ 20)
 
 ### 3-16. U.C 16 - View Posts (게시글 목록 및 상세 조회)
 ```mermaid
@@ -719,7 +722,7 @@ sequenceDiagram
 
 ---
 
-## 💬 Module 6. AI 공감 대화 (U.C 21)
+## Module 6. AI 공감 대화 (U.C 21)
 
 ### 3-21. U.C 21 - AI Empathy Chat (AI 공감 대화)
 ```mermaid
