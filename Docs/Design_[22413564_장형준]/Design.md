@@ -19,7 +19,7 @@
 | Revision date | Version # | Description         | Author          |
 | :------------ | :-------- | :------------------ | :-------------- |
 | 05/26/2026    | 0.01      | First Documentation | Jang Hyeong jun |
-|               |           |                     |                 |
+| 05/26/2026    | 1.00      | Update sequence/state diagrams and H/W, S/W requirements | Jang Hyeong jun |
 
 ---
 
