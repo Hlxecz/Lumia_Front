@@ -32,7 +32,7 @@ interface UserSettingsData {
 }
 
 const SettingsScreen = () => {
-  const { token } = useAuth();
+  const { token, logout } = useAuth();
   const { isMusicOn, setIsMusicOn, selectedMusic, setSelectedMusic } = useMusic();
   const [settings, setSettings] = useState<UserSettingsData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -161,6 +161,30 @@ const SettingsScreen = () => {
         )}
         </View>
         <View style={styles.section}><Text style={styles.sectionTitle}>환경 설정</Text><View style={styles.sectionHeader}><Text style={styles.extraText}>앱 버전</Text><Text style={styles.extraText}>v{Constants.manifest?.version ?? '1.0.0'}</Text></View></View>
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>디버그 모드</Text>
+          <TouchableOpacity 
+            style={styles.debugButton}
+            onPress={() => {
+              Alert.alert(
+                "디버그 모드",
+                "세션을 초기화하고 로그인 화면으로 돌아가시겠습니까?",
+                [
+                  { text: "취소", style: "cancel" },
+                  { 
+                    text: "초기화 및 로그아웃", 
+                    onPress: async () => {
+                      await logout();
+                    },
+                    style: "destructive"
+                  }
+                ]
+              );
+            }}
+          >
+            <Text style={styles.debugButtonText}>세션 초기화 및 로그아웃</Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -219,6 +243,20 @@ const styles = StyleSheet.create({
   modalContent: { backgroundColor: '#fff', padding: 20, borderTopLeftRadius: 20, borderTopRightRadius: 20 },
   closeButton: { alignSelf: 'flex-end', padding: 10 },
   closeText: { fontSize: 16, fontWeight: '600', color: '#007AFF' },
+  debugButton: {
+    marginTop: 5,
+    padding: 14,
+    backgroundColor: '#FFF0F0',
+    borderRadius: 10,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#FFD3D3',
+  },
+  debugButtonText: {
+    color: '#D32F2F',
+    fontSize: 15,
+    fontWeight: '600',
+  },
 });
 
 export default SettingsScreen;

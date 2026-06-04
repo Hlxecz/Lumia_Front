@@ -4,7 +4,7 @@
 
 ---
 
-### 📌 주요 어노테이션 (Annotations)
+###        주요 어노테이션 (Annotations)
 
 <table align="center" width="100%">
   <thead bgcolor="#f2f2f2">
@@ -75,7 +75,7 @@
 
 ---
 
-### 📌 설계/기술 관련 핵심 용어 (Technical Terms)
+###  설계/기술 관련 핵심 용어 (Technical Terms)
 
 <table align="center" width="100%">
   <thead bgcolor="#f2f2f2">

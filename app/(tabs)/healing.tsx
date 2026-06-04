@@ -90,7 +90,11 @@ export default function HealingScreen() {
       ) : (
         <Image source={item.image} style={styles.mediaFire} resizeMode="cover" />
       )}
-      <Text style={styles.label}>{item.label}</Text>
+      <View style={styles.textContainer}>
+        <Text style={styles.swipeHint}>
+          {item.key === 'fire' ? '우로 슬라이드하세요' : '좌로 슬라이드 하세요'}
+        </Text>
+      </View>
     </View>
   );
 
@@ -126,13 +130,30 @@ const styles = StyleSheet.create({
     height: '80%',
     marginTop: 30, // 필요 시 추가 조정 가능
   },
+  textContainer: {
+    position: 'absolute',
+    top: '8%', // 위쪽으로 많이 올림 (필요 시 % 수치를 더 조절 가능)
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+    zIndex: 10,
+  },
   label: {
-    marginBottom: 50,
+    marginBottom: 10,
     fontSize: 20,
     color: 'white',
     backgroundColor: 'rgba(0,0,0,0.5)',
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderRadius: 12,
+  },
+  swipeHint: {
+    fontSize: 14,
+    color: 'rgba(255, 255, 255, 0.8)',
+    backgroundColor: 'rgba(0,0,0,0.3)',
+    paddingHorizontal: 14,
+    paddingVertical: 7,
+    borderRadius: 10,
+    overflow: 'hidden',
   },
 });

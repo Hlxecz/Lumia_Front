@@ -3,7 +3,7 @@ import TimeBasedBackground from '@/components/TimeBasedBackground';
 import { API_BASE_URL, API_ENDPOINTS } from '@/constants/api';
 import { useAuth } from '@/context/AuthContext';
 import axios from 'axios';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   ActivityIndicator,
   Alert,
@@ -38,6 +38,23 @@ const ChatScreen = () => {
   const [botMessage, setBotMessage] = useState(DEFAULT_MESSAGE);
   const [userInput, setUserInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [isKeyboardVisible, setIsKeyboardVisible] = useState(false);
+
+  useEffect(() => {
+    const showSubscription = Keyboard.addListener(
+      Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow',
+      () => setIsKeyboardVisible(true)
+    );
+    const hideSubscription = Keyboard.addListener(
+      Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDidHide',
+      () => setIsKeyboardVisible(false)
+    );
+
+    return () => {
+      showSubscription.remove();
+      hideSubscription.remove();
+    };
+  }, []);
 
   const resolveAssistantMessage = (data: ChatApiResponse) => {
     return (
@@ -129,7 +146,7 @@ const ChatScreen = () => {
                 style={styles.plusButton}
                 onPress={handlePlusPress}
               >
-                <Text style={styles.plusText}>+</Text>
+                <Text style={styles.plusText}>{isKeyboardVisible ? '▼' : '+'}</Text>
               </TouchableOpacity>
 
               <TextInput
